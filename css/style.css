@@ -67,21 +67,23 @@
     margin-left: 10px;
 }
 
-#b-badan-input {
+#beratBmi {
     width: 100%;
 }
 
-#t-badan-input {
+#usiaBmi {
     width: 100%;
 }
 
-#usia-input {
+#tinggiBmi {
     width: 100%;
 }
+
 
 .hasil-kalkulasi {
     font-size: 250%;
     font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
 }
 
 .footer {

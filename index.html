@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css\style.css">
 </head>
 
-<body>
+<body class="body">
     <!-- Title Content -->
     <header class="title-content">
         <h1>Kalkulator BMI</h1>
@@ -35,39 +35,39 @@
                         Jenis Kelamin
                     </label>
                     <br>
-                    <input type="radio" name="j-kelamin-input1" id="j-kelamin-input1" />
-                    <label for="j-kelamin-input1">Pria</label>
-                    <input type="radio" name="jKelamin-input2" id="j-kelamin-input2" />
-                    <label for="j-kelamin-input2">Wanita</label>
+                    <input type="radio" name="gender" id="pria" value="pria" checked />
+                    <label for="pria">Pria</label>
+                    <input type="radio" name="gender" id="wanita" value="wanita" />
+                    <label for="wanita">Wanita</label>
 
                 </div>
                 <div>
-                    <label for="b-badan-input">
+                    <label for="beratBmi">
                         Berat Badan (kg)
                     </label>
                     <br>
-                    <input type="number" name="b-badan-input" id="b-badan-input" />
+                    <input type="number" name="beratBmi" id="beratBmi" required />
                 </div>
 
                 <div>
-                    <label for="usia-input">
+                    <label for="usiaBmi">
                         Usia (tahun)
                     </label>
                     <br>
-                    <input type="number" name="usia-input" id="usia-input" />
+                    <input type="number" name="usiaBmi" id="usiaBmi"  />
                 </div>
 
                 <div>
-                    <label for="t-badan-input">
+                    <label for="tinggiBmi">
                         Tinggi Badan (cm)
                     </label>
                     <br>
-                    <input type="number" name="t-badan-input" id="t-badan-input" />
+                    <input type="number" name="tinggiBmi" id="tinggiBmi" required />
                 </div>
 
                 <div>
-                    <button class="btn-hitung">Hitung BMI</button>
-                    <button class="btn-reset">Reset</button>
+                    <button type="button" class="btn-hitung" onclick="hitungBmi();">Hitung BMI</button>
+                    <button type="button" class="btn-reset" onclick="resetBmi();">Reset</button>
                 </div>
             </form>
 
@@ -98,9 +98,9 @@
                     <h2>Hasil</h2>
                 </header>
                 <form action="#" class="form-hasil">
-                    <p id="hasil-singkat1">Berat Badan Lebih</p>
+                    <p id="hasil-singkat1">Hasil</p>
                     <div class="hasil-kalkulasi" id="hasil-kalkulasi">0</div>
-                    <p id="hasil-singkat2">Anda memiliki berat badan berlebih ....</p>
+                    <p id="hasil-singkat2">Informasi hasil</p>
                 </form>
             </div>
 
@@ -108,8 +108,10 @@
             <article>
                 <form action="#" class="form-artikel" id="hasil-statement">
                     <p>Hasil BMI diantara 23 dan 25 ....</p>
-                    <p>Anda berada dalam kategori .... Kalkulator ini hanya boleh digunakan oleh seorang dewasan (wanita hamil atau menyusui tidak boleh
-                        mengandalkan pembacaan BMI ini) dan tidak ada tindakan yang harus dambil berdasarkan nilainya selain
+                    <p>Anda berada dalam kategori .... Kalkulator ini hanya boleh digunakan oleh seorang dewasan (wanita
+                        hamil atau menyusui tidak boleh
+                        mengandalkan pembacaan BMI ini) dan tidak ada tindakan yang harus dambil berdasarkan nilainya
+                        selain
                         berkonsultasi dengan orang yang memenuhisyarat seperti dokter</p>
                 </form>
 
@@ -124,5 +126,6 @@
     </footer>
 </body>
 <!-- Javascript -->
+<script src="js/script.js" type="Application/javascript"></script>
 
 </html>
