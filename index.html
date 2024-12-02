@@ -12,15 +12,15 @@
 
 <body>
     <!-- Title Content -->
-    <header>
+    <header class="title-content">
         <h1>Kalkulator BMI</h1>
     </header>
 
     <!-- Web Content -->
-    <main>
+    <main class="flex-container-webcontent">
 
         <!-- Section Kalkulator BMI -->
-        <section>
+        <section class="first-section">
             <!-- Main Article -->
             <article>
                 <p>Berat badan adalah impian semua orang. Tidak hanya meiliki tubuh yang menunjang penampilan, berat
@@ -29,7 +29,7 @@
                     kalkulator
                     BMI</p>
             </article>
-            <form action="#">
+            <form action="#" class="form-input">
                 <div>
                     <label for="j-kelamin-input">
                         Jenis Kelamin
@@ -45,6 +45,7 @@
                     <label for="b-badan-input">
                         Berat Badan (kg)
                     </label>
+                    <br>
                     <input type="number" name="b-badan-input" id="b-badan-input" />
                 </div>
 
@@ -52,6 +53,7 @@
                     <label for="usia-input">
                         Usia (tahun)
                     </label>
+                    <br>
                     <input type="number" name="usia-input" id="usia-input" />
                 </div>
 
@@ -59,12 +61,13 @@
                     <label for="t-badan-input">
                         Tinggi Badan (cm)
                     </label>
+                    <br>
                     <input type="number" name="t-badan-input" id="t-badan-input" />
                 </div>
 
                 <div>
-                    <button>Hitung BMI</button>
-                    <button>Reset</button>
+                    <button class="btn-hitung">Hitung BMI</button>
+                    <button class="btn-reset">Reset</button>
                 </div>
             </form>
 
@@ -89,21 +92,26 @@
         </section>
 
         <!-- Section Hasil Kalkulasi  -->
-        <section>
+        <section class="second-section">
             <div>
                 <header>
                     <h2>Hasil</h2>
                 </header>
-
-                <p>Berat Badan Lebih</p>
-                <div id="hasil-kalkulasi">0</div>
-                <p id="info-hasil">Anda memiliki berat badan ....</p>
+                <form action="#" class="form-hasil">
+                    <p id="hasil-singkat1">Berat Badan Lebih</p>
+                    <div class="hasil-kalkulasi" id="hasil-kalkulasi">0</div>
+                    <p id="hasil-singkat2">Anda memiliki berat badan berlebih ....</p>
+                </form>
             </div>
 
             <!-- Third Articel -->
-             <article>
-                <p>Hasil BMI diantara 23 dan 25</p>
-                <p>Anda berada dalam ....</p>
+            <article>
+                <form action="#" class="form-artikel" id="hasil-statement">
+                    <p>Hasil BMI diantara 23 dan 25 ....</p>
+                    <p>Anda berada dalam kategori .... Kalkulator ini hanya boleh digunakan oleh seorang dewasan (wanita hamil atau menyusui tidak boleh
+                        mengandalkan pembacaan BMI ini) dan tidak ada tindakan yang harus dambil berdasarkan nilainya selain
+                        berkonsultasi dengan orang yang memenuhisyarat seperti dokter</p>
+                </form>
 
             </article>
         </section>
@@ -111,7 +119,7 @@
     </main>
 
     <!-- Web Footer -->
-    <footer>
+    <footer class="footer">
         <p>Made by mimamc@2014</p>
     </footer>
 </body>

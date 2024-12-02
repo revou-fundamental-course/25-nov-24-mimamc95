@@ -1,0 +1,89 @@
+.title-content {
+    text-align: center;
+}
+
+.first-section {
+    width: 50%;
+    margin: 20px;
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.second-section {
+    width: 50%;
+    margin: 20px;
+    text-align: justify;
+}
+
+
+.flex-container-webcontent {
+    display: flex;
+    justify-content: center;
+
+}
+
+
+.form-input {
+    background-color: rgb(230, 227, 222);
+    border-radius: 10px;
+    margin: 5px;
+    display: grid;
+    /* justify-self: flex-start; */
+    gap: 10px;
+    padding: 25px;
+}
+
+.form-hasil {
+    background-color: rgb(230, 227, 222);
+    border-radius: 10px;
+    margin: 5px;
+    padding: 25px;
+    justify-items: center;
+}
+
+.form-artikel {
+    background-color: rgb(230, 227, 222);
+    border-radius: 10px;
+    margin: 5px;
+    padding: 25px;
+
+}
+
+.btn-hitung {
+    background-color: rgb(85, 198, 246);
+    color: rgb(255, 255, 255);
+    border-radius: 3px;
+    border-style: none;
+    padding: 5px;
+    margin: 0px;
+}
+
+.btn-reset {
+    background-color: rgb(255, 254, 254);
+    color: black;
+    border-radius: 3px;
+    border-style: none;
+    padding: 5px;
+    margin-left: 10px;
+}
+
+#b-badan-input {
+    width: 100%;
+}
+
+#t-badan-input {
+    width: 100%;
+}
+
+#usia-input {
+    width: 100%;
+}
+
+.hasil-kalkulasi {
+    font-size: 250%;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.footer {
+    text-align: center;
+}
