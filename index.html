@@ -31,13 +31,13 @@
             </article>
             <form action="#" class="form-input">
                 <div>
-                    <label for="j-kelamin-input">
+                    <label for="genderBmi">
                         Jenis Kelamin
                     </label>
                     <br>
-                    <input type="radio" name="gender" id="pria" value="pria" checked />
+                    <input type="radio" name="genderBmi" id="genderBmi" value="pria" checked />
                     <label for="pria">Pria</label>
-                    <input type="radio" name="gender" id="wanita" value="wanita" />
+                    <input type="radio" name="genderBmi" id="genderBmi" value="wanita" />
                     <label for="wanita">Wanita</label>
 
                 </div>
@@ -46,7 +46,7 @@
                         Berat Badan (kg)
                     </label>
                     <br>
-                    <input type="number" name="beratBmi" id="beratBmi" required />
+                    <input type="number" name="beratBmi" id="beratBmi" placeholder="" required />
                 </div>
 
                 <div>
@@ -54,7 +54,7 @@
                         Usia (tahun)
                     </label>
                     <br>
-                    <input type="number" name="usiaBmi" id="usiaBmi" required/>
+                    <input type="number" name="usiaBmi" id="usiaBmi" placeholder="" required/>
                 </div>
 
                 <div>
@@ -62,7 +62,7 @@
                         Tinggi Badan (cm)
                     </label>
                     <br>
-                    <input type="number" name="tinggiBmi" id="tinggiBmi" required/>
+                    <input type="number" name="tinggiBmi" id="tinggiBmi" placeholder="" required/>
                 </div>
 
                 <div>
@@ -107,6 +107,7 @@
             <!-- Third Articel -->
             <article>
                 <form action="#" class="form-artikel" >
+                    <p id="hasil-usia"></p>
                     <p id="hasil-range">Informasi hasil range BMI.</p>
                     <p id="hasil-artikel">Artikel saran.</p>
                 </form>
