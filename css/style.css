@@ -41,6 +41,14 @@
     justify-items: center;
 }
 
+
+.form-info {
+    background-color: rgb(230, 227, 222);
+    border-radius: 10px;
+    margin: 5px;
+    padding: 25px;
+
+}
 .form-artikel {
     background-color: rgb(230, 227, 222);
     border-radius: 10px;
@@ -111,3 +119,4 @@
     
     }
 }
+
