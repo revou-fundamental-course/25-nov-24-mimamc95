@@ -54,7 +54,7 @@
                         Usia (tahun)
                     </label>
                     <br>
-                    <input type="number" name="usiaBmi" id="usiaBmi"  />
+                    <input type="number" name="usiaBmi" id="usiaBmi" required/>
                 </div>
 
                 <div>
@@ -62,7 +62,7 @@
                         Tinggi Badan (cm)
                     </label>
                     <br>
-                    <input type="number" name="tinggiBmi" id="tinggiBmi" required />
+                    <input type="number" name="tinggiBmi" id="tinggiBmi" required/>
                 </div>
 
                 <div>
@@ -98,21 +98,17 @@
                     <h2>Hasil</h2>
                 </header>
                 <form action="#" class="form-hasil">
-                    <p id="hasil-singkat1">Hasil</p>
+                    <p id="hasil-singkat">Hasil</p>
                     <div class="hasil-kalkulasi" id="hasil-kalkulasi">0</div>
-                    <p id="hasil-singkat2">Informasi hasil</p>
+                    <p id="hasil-statement">Informasi hasil</p>
                 </form>
             </div>
 
             <!-- Third Articel -->
             <article>
-                <form action="#" class="form-artikel" id="hasil-statement">
-                    <p>Hasil BMI diantara 23 dan 25 ....</p>
-                    <p>Anda berada dalam kategori .... Kalkulator ini hanya boleh digunakan oleh seorang dewasan (wanita
-                        hamil atau menyusui tidak boleh
-                        mengandalkan pembacaan BMI ini) dan tidak ada tindakan yang harus dambil berdasarkan nilainya
-                        selain
-                        berkonsultasi dengan orang yang memenuhisyarat seperti dokter</p>
+                <form action="#" class="form-artikel" >
+                    <p id="hasil-range">Informasi hasil range BMI.</p>
+                    <p id="hasil-artikel">Artikel saran.</p>
                 </form>
 
             </article>
