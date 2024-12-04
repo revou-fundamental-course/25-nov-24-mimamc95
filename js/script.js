@@ -71,8 +71,12 @@ function resetBmi() {
     document.getElementById('beratBmi').value = '';
     document.getElementById('usiaBmi').value = '';
     document.getElementById('tinggiBmi').value = '';
+    document.getElementById('hasil-singkat').innerHTML = 'Hasil';
     document.getElementById('hasil-kalkulasi').innerHTML = '0';
     document.getElementById('gender-usia').innerHTML = '';
+    document.getElementById('hasil-statement').innerHTML = 'Informasi hasil';
+    document.getElementById('hasil-range').innerHTML = 'Informasi hasil range BMI.';
+    document.getElementById('hasil-artikel').innerHTML = 'Artikel saran.';
 }
 
 // Mendapatkan tahun saat ini untuk footer
