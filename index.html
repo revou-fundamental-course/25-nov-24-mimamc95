@@ -29,7 +29,9 @@
                     kalkulator
                     BMI</p>
             </article>
+            <!-- Form inputan data BMI -->
             <form action="#" class="form-input">
+                <!-- Inputan radio btn gender -->
                 <div>
                     <label for="genderBmi">
                         Jenis Kelamin
@@ -39,8 +41,8 @@
                     <label for="pria">Pria</label>
                     <input type="radio" name="genderBmi" id="genderBmi" value="wanita" />
                     <label for="wanita">Wanita</label>
-
                 </div>
+                <!-- Inputan berat badan -->
                 <div>
                     <label for="beratBmi">
                         Berat Badan (kg)
@@ -48,7 +50,7 @@
                     <br>
                     <input type="number" name="beratBmi" id="beratBmi" placeholder="" required />
                 </div>
-
+                <!-- Inputan usia -->
                 <div>
                     <label for="usiaBmi">
                         Usia (tahun)
@@ -56,7 +58,7 @@
                     <br>
                     <input type="number" name="usiaBmi" id="usiaBmi" placeholder="" required />
                 </div>
-
+                <!-- Inputan tinggi badan -->
                 <div>
                     <label for="tinggiBmi">
                         Tinggi Badan (cm)
@@ -64,7 +66,7 @@
                     <br>
                     <input type="number" name="tinggiBmi" id="tinggiBmi" placeholder="" required />
                 </div>
-
+                <!-- Tombol fungsi -->
                 <div>
                     <button type="button" class="btn-hitung" onclick="hitungBmi();">Hitung BMI</button>
                     <button type="button" class="btn-reset" onclick="resetBmi();">Reset</button>
@@ -97,6 +99,7 @@
                 <header>
                     <h2>Hasil</h2>
                 </header>
+                <!-- Form hasil BMI -->
                 <form action="#" class="form-hasil">
                     <p id="hasil-singkat">Hasil</p>
                     <div class="hasil-kalkulasi" id="hasil-kalkulasi">0</div>
@@ -107,20 +110,22 @@
 
             <!-- Third Articel -->
             <article>
+                <!-- Form hasil dan artikel -->
                 <form action="#" class="form-artikel">
                     <p id="hasil-range">Informasi hasil range BMI.</p>
                     <p id="hasil-artikel">Artikel saran.</p>
                 </form>
-
             </article>
         </section>
-
     </main>
 
     <!-- Web Footer -->
-    <footer class="footer">
-        <p>Made by mimamc@2014</p>
+    <footer>
+        <p class="footer">&copy; <span id="currentYear"></span> mimamc95. All rights reserved.</p>
     </footer>
+    <script>
+
+    </script>
 </body>
 <!-- Javascript -->
 <script src="js/script.js" type="Application/javascript"></script>

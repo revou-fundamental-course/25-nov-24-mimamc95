@@ -1,7 +1,9 @@
+/* Style untuk judul konten */
 .title-content {
     text-align: center;
 }
 
+/* Style untuk section konten pertama */
 .first-section {
     width: 50%;
     margin: 20px;
@@ -9,30 +11,31 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Style untuk section konten kedua */
 .second-section {
     width: 50%;
     margin: 20px;
     text-align: justify;
 }
 
-
+/* Style untuk container konten */
 .flex-container-webcontent {
     display: flex;
     justify-content: center;
 
 }
 
-
+/* Style untuk form inputan BMI */
 .form-input {
     background-color: rgb(230, 227, 222);
     border-radius: 10px;
     margin: 5px;
     display: grid;
-    /* justify-self: flex-start; */
     gap: 10px;
     padding: 25px;
 }
 
+/* Style untuk form hasil BMI */
 .form-hasil {
     background-color: rgb(230, 227, 222);
     border-radius: 10px;
@@ -41,7 +44,7 @@
     justify-items: center;
 }
 
-
+/* Style untuk form informasi */
 .form-info {
     background-color: rgb(230, 227, 222);
     border-radius: 10px;
@@ -49,6 +52,8 @@
     padding: 25px;
 
 }
+
+/* Style untuk form artikel */
 .form-artikel {
     background-color: rgb(230, 227, 222);
     border-radius: 10px;
@@ -57,6 +62,7 @@
 
 }
 
+/* Style untuk tombol hitung BMI */
 .btn-hitung {
     background-color: rgb(85, 198, 246);
     color: rgb(255, 255, 255);
@@ -66,6 +72,7 @@
     margin: 0px;
 }
 
+/* Style untuk tombol reset inputan dan hasil BMI */
 .btn-reset {
     background-color: rgb(255, 254, 254);
     color: black;
@@ -75,6 +82,7 @@
     margin-left: 10px;
 }
 
+/* Style untuk inputan BMI */
 #beratBmi {
     width: 100%;
 }
@@ -87,37 +95,41 @@
     width: 100%;
 }
 
-
+/* Style untuk hasil hitung BMI */
 .hasil-kalkulasi {
     font-size: 250%;
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
 }
 
+/* Style untuk footer konten */
 .footer {
     text-align: center;
 }
 
+
 /* responsive design */
-@media only screen and (max-width:600px){
+@media only screen and (max-width:600px) {
+    /* Style untuk responsive container konten */
     .flex-container-webcontent {
         display: grid;
         justify-content: center;
-    
+
     }
 
+    /* Style untuk responsive section konten pertama */
     .first-section {
         width: 90%;
         margin: 20px;
         text-align: justify;
         font-family: Arial, Helvetica, sans-serif;
     }
-    
+
+    /* Style untuk responsive section konten kedua */
     .second-section {
         width: 90%;
         margin: 20px;
         text-align: justify;
-    }    
-    
-}
+    }
 
+}
