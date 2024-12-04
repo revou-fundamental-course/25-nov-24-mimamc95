@@ -12,7 +12,7 @@ function hitungBmi() {
     // pernyataan logic validasi
     if (beratBmi.value === "" || usiaBmi.value === "" || tinggiBmi.value == "") {
         console.log("Masukan inputan dengan benar!");
-        alert("Inputan wajib diisi!");
+        alert("Inputan wajib diisi, cek kembali!");
         return;
     }
 

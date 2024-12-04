@@ -98,7 +98,14 @@
     text-align: center;
 }
 
+/* responsive design */
 @media only screen and (max-width:600px){
+    .flex-container-webcontent {
+        display: grid;
+        justify-content: center;
+    
+    }
+
     .first-section {
         width: 90%;
         margin: 20px;
@@ -110,13 +117,7 @@
         width: 90%;
         margin: 20px;
         text-align: justify;
-    }
+    }    
     
-    
-    .flex-container-webcontent {
-        display: grid;
-        justify-content: center;
-    
-    }
 }
 
