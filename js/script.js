@@ -1,3 +1,15 @@
+// Fungsi untuk mengganti mode
+function toggleDarkMode() {
+    const body = document.body;
+    body.classList.toggle('dark-mode');
+    body.classList.toggle('light-mode');
+}
+
+// Buat fungsi tombol about
+function aboutBMI() {
+    alert('Kalkulator BMI (Body Mass Index) \nAlat yang digunakan untuk menghitung indeks massa tubuh seseorang berdasarkan berat badan dan tinggi badan mereka untuk menentukan apakah seseorang memiliki berat badan yang sehat, kurang berat badan, kelebihan berat badan, atau obesitas. \n\nVersi: 0.1 (Beta)');
+}
+
 // Buat fungsi hitungBmi dengan kondisi & perulangan
 function hitungBmi() {
     // console.log("Hitung BMI");

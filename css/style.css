@@ -1,6 +1,8 @@
 /* Style untuk navbar */
 body {
     margin: 0;
+    padding: 0;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 ul.topnav {
@@ -11,11 +13,11 @@ ul.topnav {
     background-color: rgb(31, 31, 32);
 }
 
-ul.topnav li{
-float: left;
+ul.topnav li {
+    float: left;
 }
 
-ul.topnav li a{
+ul.topnav li a {
     display: block;
     color: aliceblue;
     text-align: center;
@@ -24,15 +26,19 @@ ul.topnav li a{
     font-family: Arial, Helvetica, sans-serif;
 }
 
-ul.topnav li a:hover:not(.active){
-    background-color:rgb(74, 74, 74);
+ul.topnav li a:hover:not(.active) {
+    background-color: rgb(74, 74, 74);
 }
 
-ul.topnav li a.active{
+ul.topnav li a.active {
     background-color: rgb(85, 198, 246);
 }
 
-ul.topnav li.right{
+body.dark-mode ul.topnav li a.active {
+    background-color: rgb(159, 158, 158);
+}
+
+ul.topnav li.right {
     float: right;
     margin: 1px;
 }
@@ -63,13 +69,23 @@ ul.topnav li.right{
 .flex-container-webcontent {
     display: flex;
     justify-content: center;
-    
+
 
 }
 
 /* Style untuk form inputan BMI */
 .form-input {
     background-color: rgb(230, 227, 222);
+    border-radius: 10px;
+    margin: 5px;
+    display: grid;
+    gap: 10px;
+    padding: 25px;
+}
+
+/* Style untuk form inputan BMI dark mode*/
+body.dark-mode .form-input {
+    background-color: rgb(87, 159, 172);
     border-radius: 10px;
     margin: 5px;
     display: grid;
@@ -86,8 +102,18 @@ ul.topnav li.right{
     justify-items: center;
 }
 
-/* Style untuk form informasi */
-.form-info {
+
+/* Style untuk form hasil BMI */
+body.dark-mode .form-hasil {
+    background-color: rgb(87, 159, 172);
+    border-radius: 10px;
+    margin: 5px;
+    padding: 25px;
+    justify-items: center;
+}
+
+/* Style untuk form artikel */
+.form-artikel {
     background-color: rgb(230, 227, 222);
     border-radius: 10px;
     margin: 5px;
@@ -96,8 +122,8 @@ ul.topnav li.right{
 }
 
 /* Style untuk form artikel */
-.form-artikel {
-    background-color: rgb(230, 227, 222);
+body.dark-mode .form-artikel {
+    background-color: rgb(87, 159, 172);
     border-radius: 10px;
     margin: 5px;
     padding: 25px;
@@ -114,6 +140,16 @@ ul.topnav li.right{
     margin: 0px;
 }
 
+/* Style untuk tombol hitung BMI dark mode*/
+body.dark-mode .btn-hitung {
+    background-color: rgb(255, 254, 254);
+    color: rgb(0, 0, 0);
+    border-radius: 3px;
+    border-style: none;
+    padding: 5px;
+    margin: 0px;
+}
+
 /* Style untuk tombol reset inputan dan hasil BMI */
 .btn-reset {
     background-color: rgb(255, 254, 254);
@@ -122,6 +158,28 @@ ul.topnav li.right{
     border-style: none;
     padding: 5px;
     margin-left: 10px;
+}
+
+/* Style untuk tombol reset inputan dan hasil BMI dark mode*/
+body.dark-mode .btn-reset {
+    background-color: rgb(186, 183, 183);
+    color: black;
+    border-radius: 3px;
+    border-style: none;
+    padding: 5px;
+    margin-left: 10px;
+}
+
+/* Style untuk Mode terang */
+body.light-mode {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/* Style untuk Mode gelap */
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
 }
 
 /* Style untuk inputan BMI */
@@ -153,11 +211,15 @@ ul.topnav li.right{
 /* responsive design */
 @media only screen and (max-width:600px) {
 
-/* Style untuk navbar */
-ul.topnav li.right,
-ul.topnav li{
-    float: none;
-}
+    /* Style untuk navbar */
+    ul.topnav li.right{
+        float: none;
+        justify-self: center;
+    }
+    ul.topnav li {
+        float: none;
+        
+    }
 
     /* Style untuk responsive container konten */
     .flex-container-webcontent {
@@ -181,6 +243,6 @@ ul.topnav li{
         text-align: justify;
     }
 
-    
+
 
 }

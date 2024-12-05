@@ -23,5 +23,6 @@
     },
     "files.associations": {
         "*.txt": "bg3txt"
-    }
+    },
+    "liveServer.settings.port": 5501
 }
