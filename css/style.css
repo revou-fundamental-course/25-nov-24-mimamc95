@@ -1,6 +1,46 @@
+/* Style untuk navbar */
+body {
+    margin: 0;
+}
+
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(31, 31, 32);
+}
+
+ul.topnav li{
+float: left;
+}
+
+ul.topnav li a{
+    display: block;
+    color: aliceblue;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul.topnav li a:hover:not(.active){
+    background-color:rgb(74, 74, 74);
+}
+
+ul.topnav li a.active{
+    background-color: rgb(85, 198, 246);
+}
+
+ul.topnav li.right{
+    float: right;
+    margin: 1px;
+}
+
 /* Style untuk judul konten */
 .title-content {
     text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 /* Style untuk section konten pertama */
@@ -16,12 +56,14 @@
     width: 50%;
     margin: 20px;
     text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 /* Style untuk container konten */
 .flex-container-webcontent {
     display: flex;
     justify-content: center;
+    
 
 }
 
@@ -110,6 +152,13 @@
 
 /* responsive design */
 @media only screen and (max-width:600px) {
+
+/* Style untuk navbar */
+ul.topnav li.right,
+ul.topnav li{
+    float: none;
+}
+
     /* Style untuk responsive container konten */
     .flex-container-webcontent {
         display: grid;
@@ -131,5 +180,7 @@
         margin: 20px;
         text-align: justify;
     }
+
+    
 
 }
