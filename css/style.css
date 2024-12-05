@@ -6,6 +6,8 @@ body {
 }
 
 ul.topnav {
+    position: sticky;
+    top: 0;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -212,13 +214,14 @@ body.dark-mode {
 @media only screen and (max-width:600px) {
 
     /* Style untuk navbar */
-    ul.topnav li.right{
+    ul.topnav li.right {
         float: none;
         justify-self: center;
     }
+
     ul.topnav li {
         float: none;
-        
+
     }
 
     /* Style untuk responsive container konten */
